@@ -1,0 +1,163 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* The html and body elements cannot have any padding or margin. */ }
+
+a {
+  color: #EB810F; }
+  a:hover {
+    color: #EB810F; }
+
+.text-primary {
+  color: #EEEE23; }
+
+.page-header {
+  margin-top: 1em;
+  margin-bottom: 0;
+  border-bottom: 0; }
+  .page-header .lead {
+    font-size: 1.2em;
+    margin-bottom: 0.5em; }
+  .page-header + .page-header {
+    margin-top: 2em; }
+
+.btn {
+  background-image: none;
+  border: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-family: "proxima-nova", helvetica; }
+  .btn.btn-primary, .btn.btn-default {
+    background-color: #EEEE23;
+    color: #333;
+    transition: background-color 0.3s;
+    text-shadow: none; }
+    .btn.btn-primary:hover, .btn.btn-default:hover {
+      background-color: #C2C22B; }
+
+.form-control {
+  border-radius: 0;
+  border: 0; }
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px; }
+  #wrap h1, #wrap .navbar {
+    font-family: "proxima-nova", helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0; }
+  #wrap .navbar {
+    margin-bottom: 0;
+    background-image: none;
+    border: 0;
+    background-color: #333; }
+    #wrap .navbar a {
+      transition: color 0.3s; }
+    #wrap .navbar .navbar-collapse {
+      border-top: 0;
+      box-shadow: none; }
+      @media screen and (min-width: 768px) {
+        #wrap .navbar .navbar-collapse {
+          float: right; } }
+  #wrap .jumbotron {
+    padding: 1em 0;
+    margin: 0 0 0.5em 0;
+    background-color: #EEEE23;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: 90% 30%;
+    background-size: 177px; }
+    #wrap .jumbotron h1 {
+      font-size: 2em; }
+    #wrap .jumbotron .btn-primary {
+      color: #333;
+      background-color: #FFF;
+      font-size: 0.6em;
+      font-weight: bold; }
+      #wrap .jumbotron .btn-primary:hover {
+        background-color: #333;
+        color: #fff; }
+    @media screen and (min-width: 768px) {
+      #wrap .jumbotron {
+        padding-top: 1em;
+        padding-bottom: 1em; } }
+  #wrap.index .jumbotron {
+    background-position: top right;
+    background-size: 355px; }
+    @media screen and (min-width: 768px) {
+      #wrap.index .jumbotron {
+        padding-top: 2em;
+        padding-bottom: 2em; } }
+    #wrap.index .jumbotron h1 {
+      font-size: 3em; }
+  #wrap #page {
+    padding-bottom: 2em; }
+    #wrap #page .row .job, #wrap #page .row .project {
+      background-color: #eee;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      transition: background-color 0.3s; }
+      #wrap #page .row .job:hover, #wrap #page .row .project:hover {
+        background-color: #f6f6f6; }
+      #wrap #page .row .job h2, #wrap #page .row .job h3, #wrap #page .row .project h2, #wrap #page .row .project h3 {
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-family: "proxima-nova", helvetica;
+        font-weight: bold; }
+      #wrap #page .row .job h3, #wrap #page .row .project h3 {
+        font-size: 0.8em; }
+      #wrap #page .row .job .date-needed, #wrap #page .row .project .date-needed {
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+        box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+        background-color: #555;
+        padding: 4px;
+        position: absolute;
+        right: 5px;
+        top: 0;
+        transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+        color: #fff;
+        font-weight: bold;
+        font-family: "proxima-nova", helvetica; }
+        @media screen and (min-width: 768px) {
+          #wrap #page .row .job .date-needed, #wrap #page .row .project .date-needed {
+            right: -10px; } }
+        #wrap #page .row .job .date-needed.urgent, #wrap #page .row .project .date-needed.urgent {
+          background-color: #DD2238; }
+        #wrap #page .row .job .date-needed.soon, #wrap #page .row .project .date-needed.soon {
+          background-color: #A04752; }
+    #wrap #page .project .row > div:first-child {
+      margin-bottom: 2em; }
+    #wrap #page .project .table thead > tr > th {
+      margin-top: 0;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      font-family: "proxima-nova", helvetica;
+      font-weight: bold;
+      padding-top: 0; }
+
+/* Set the fixed height of the footer here */
+footer {
+  height: 60px;
+  background-color: #333;
+  color: #999; }
+  footer .row {
+    margin-top: 0.5em;
+    font-size: 0.8em; }
+    footer .row h2 {
+      font-size: 1.1em;
+      text-transform: uppercase;
+      font-family: "proxima-nova", helvetica; }

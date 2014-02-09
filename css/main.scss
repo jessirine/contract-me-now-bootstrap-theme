@@ -1,0 +1,231 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+a {
+  color: #EB810F;
+
+  &:hover {
+    color: #EB810F;
+  }
+}
+
+.text-primary {
+  color: #EEEE23;
+}
+
+.page-header {
+  margin-top: 1em;
+  margin-bottom: 0;
+  border-bottom: 0;
+
+  .lead {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+
+  & + .page-header {
+    margin-top: 2em;
+  }
+}
+
+.btn {
+  background-image: none;
+  border: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-family: "proxima-nova", helvetica;
+
+  &.btn-primary, &.btn-default {
+    background-color: #EEEE23;
+    color: #333;
+    transition: background-color 0.3s;
+    text-shadow: none;
+
+    &:hover {
+      background-color: #C2C22B;
+    }
+  }
+}
+
+.form-control {
+  border-radius: 0;
+  border: 0;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+
+  h1, .navbar {
+    font-family: "proxima-nova", helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .navbar {
+    margin-bottom: 0;
+    background-image: none;
+    border: 0;
+    background-color: #333;
+
+    a {
+      transition: color 0.3s;
+    }
+
+    .navbar-collapse {
+      border-top: 0;
+      box-shadow: none;
+
+      @media screen and (min-width: 768px) {
+        float: right;
+      }
+    }
+  }
+
+  .jumbotron {
+    padding: 1em 0;
+    margin: 0 0 0.5em 0;
+    background-color: #EEEE23;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: 90% 30%;
+    background-size: 177px;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .btn-primary {
+      color: #333;
+      background-color: #FFF;
+      font-size: 0.6em;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  }
+
+  &.index .jumbotron {
+    background-position: top right;
+    background-size: 355px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+    
+    h1 {
+      font-size: 3em;
+    }
+  }
+
+  #page {
+    padding-bottom: 2em;
+
+    .row .job, .row .project {
+      background-color: #eee;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #f6f6f6;
+      }
+
+      h2, h3 {
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-family: "proxima-nova", helvetica;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 0.8em;
+      }
+
+      .date-needed {
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+        box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+        background-color: #555;
+        padding: 4px;
+        position: absolute;
+        right: 5px;
+        top: 0;
+        transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+        color: #fff;
+        font-weight: bold;
+        font-family: "proxima-nova", helvetica;
+
+        @media screen and (min-width: 768px) {
+          right: -10px;
+        }
+
+        &.urgent {
+          background-color: #DD2238;
+        }
+
+        &.soon {
+          background-color: #A04752;
+        }
+      }
+    }
+
+    .project {
+      .row > div:first-child {
+        margin-bottom: 2em;
+      }
+
+      .table thead > tr > th {
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-family: "proxima-nova", helvetica;
+        font-weight: bold;
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+/* Set the fixed height of the footer here */
+footer {
+  height: 60px;
+ 	background-color: #333;
+	color: #999;
+
+  .row {
+    margin-top: 0.5em;
+    font-size: 0.8em;
+
+    h2 {
+      font-size: 1.1em;
+      text-transform: uppercase;
+      font-family: "proxima-nova", helvetica;
+    }
+  }
+}
