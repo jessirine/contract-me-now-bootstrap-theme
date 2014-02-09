@@ -75,8 +75,9 @@ a {
     background-repeat: no-repeat;
     background-position: 90% 30%;
     background-size: 177px; }
-    #wrap .jumbotron h1 {
-      font-size: 2em; }
+    @media screen and (min-width: 768px) {
+      #wrap .jumbotron h1 {
+        font-size: 2em; } }
     #wrap .jumbotron .btn-primary {
       color: #333;
       background-color: #FFF;
@@ -96,8 +97,14 @@ a {
       #wrap.index .jumbotron {
         padding-top: 2em;
         padding-bottom: 2em; } }
-    #wrap.index .jumbotron h1 {
-      font-size: 3em; }
+    @media screen and (min-width: 768px) {
+      #wrap.index .jumbotron h1 {
+        font-size: 3em; } }
+    #wrap.index .jumbotron p {
+      font-size: 0.8em; }
+      @media screen and (min-width: 768px) {
+        #wrap.index .jumbotron p {
+          font-size: 1em; } }
   #wrap #page {
     padding-bottom: 2em; }
     #wrap #page .row .job, #wrap #page .row .project {
