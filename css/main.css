@@ -107,24 +107,29 @@ a {
           font-size: 1em; } }
   #wrap #page {
     padding-bottom: 2em; }
-    #wrap #page .row .job, #wrap #page .row .project {
+    #wrap #page .row + .row {
+      margin-top: 1em; }
+      @media screen and (min-width: 768px) {
+        #wrap #page .row + .row {
+          margin-top: 0; } }
+    #wrap #page .row .job, #wrap #page .row .project, #wrap #page .row .profile {
       background-color: #eee;
       padding-top: 1em;
       padding-bottom: 1em;
       margin-top: 0.5em;
       margin-bottom: 0.5em;
       transition: background-color 0.3s; }
-      #wrap #page .row .job:hover, #wrap #page .row .project:hover {
+      #wrap #page .row .job:hover, #wrap #page .row .project:hover, #wrap #page .row .profile:hover {
         background-color: #f6f6f6; }
-      #wrap #page .row .job h2, #wrap #page .row .job h3, #wrap #page .row .project h2, #wrap #page .row .project h3 {
+      #wrap #page .row .job h2, #wrap #page .row .job h3, #wrap #page .row .project h2, #wrap #page .row .project h3, #wrap #page .row .profile h2, #wrap #page .row .profile h3 {
         margin-top: 0;
         text-transform: uppercase;
         font-size: 1em;
         font-family: "proxima-nova", helvetica;
         font-weight: bold; }
-      #wrap #page .row .job h3, #wrap #page .row .project h3 {
+      #wrap #page .row .job h3, #wrap #page .row .project h3, #wrap #page .row .profile h3 {
         font-size: 0.8em; }
-      #wrap #page .row .job .date-needed, #wrap #page .row .project .date-needed {
+      #wrap #page .row .job .date-needed, #wrap #page .row .project .date-needed, #wrap #page .row .profile .date-needed {
         -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
         -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
         box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
@@ -140,12 +145,22 @@ a {
         font-weight: bold;
         font-family: "proxima-nova", helvetica; }
         @media screen and (min-width: 768px) {
-          #wrap #page .row .job .date-needed, #wrap #page .row .project .date-needed {
+          #wrap #page .row .job .date-needed, #wrap #page .row .project .date-needed, #wrap #page .row .profile .date-needed {
             right: -10px; } }
-        #wrap #page .row .job .date-needed.urgent, #wrap #page .row .project .date-needed.urgent {
+        #wrap #page .row .job .date-needed.urgent, #wrap #page .row .project .date-needed.urgent, #wrap #page .row .profile .date-needed.urgent {
           background-color: #DD2238; }
-        #wrap #page .row .job .date-needed.soon, #wrap #page .row .project .date-needed.soon {
+        #wrap #page .row .job .date-needed.soon, #wrap #page .row .project .date-needed.soon, #wrap #page .row .profile .date-needed.soon {
           background-color: #A04752; }
+      #wrap #page .row .job .gravatar, #wrap #page .row .project .gravatar, #wrap #page .row .profile .gravatar {
+        width: 100%; }
+    #wrap #page .profile span {
+      text-transform: uppercase;
+      font-family: "proxima-nova"; }
+      #wrap #page .profile span:first-child:before {
+        content: none; }
+      #wrap #page .profile span:before {
+        content: '\00a0\00a0|\00a0\00a0';
+        color: #ccc; }
     #wrap #page .project .row > div:first-child {
       margin-bottom: 2em; }
     #wrap #page .project .table thead > tr > th {
